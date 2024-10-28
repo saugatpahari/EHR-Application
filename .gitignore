@@ -166,3 +166,4 @@ cnn-models/Brain Tumor Classification/model_weights/
 cnn-models/Brain Tumor Classification/model.keras
 cnn-models/Brain Tumor Classification/training_cnn_line_plot.jpg
 cnn-models/Brain Tumor Classification/training_cnn_line_plot_02.jpg
+web-application/predict_image/
