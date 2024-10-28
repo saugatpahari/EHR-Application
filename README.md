@@ -18,5 +18,5 @@
 6. Then go the web-application folder and run the app.py file 
 7. You can view the application on http://127.0.0.1:5000/
 8. You can now check the output.
-# Note: If you don't run the brain_tumor_cnn_model.py before running the app,py you will not get any output or might get errors.
+# Note: If you don't run the brain_tumor_cnn_model.py before running the app.py you will not get any output or might get errors.
 # This is an ongoing project so, you can also contribute if you wish. Send the merge request and will see and decide.
