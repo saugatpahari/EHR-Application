@@ -159,4 +159,10 @@ cython_debug/
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+cnn-models/Brain Tumor Classification/.idea/
+cnn-models/Brain Tumor Classification/dataset_brain_tumor/
+cnn-models/Brain Tumor Classification/brain_image_data/
+cnn-models/Brain Tumor Classification/model_weights/
+cnn-models/Brain Tumor Classification/model.keras
+cnn-models/Brain Tumor Classification/training_cnn_line_plot.jpg
+cnn-models/Brain Tumor Classification/training_cnn_line_plot_02.jpg

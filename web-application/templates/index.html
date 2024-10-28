@@ -1,0 +1,46 @@
+{% extends "import.html" %}
+{% block content %}
+
+<div class="container mt-5 text-center">
+    <h2 class="mb-4">Upload a MRI scanned Image(Only single image)</h2>
+
+    <!-- File Upload Section -->
+    <div class="upload-area">
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+            <div class="upload-placeholder" id="uploadPlaceholder">
+                <span class="upload-icon">+</span>
+                <p>Click to upload an image</p>
+            </div>
+            <img id="imagePreview" class="img-responsive" style="display: none;" />
+        </form>
+    </div>
+
+    <!-- Predict Button Section -->
+    <div class="predict-button-container" style="display: none;">
+        <button type="button" class="btn btn-info btn-lg w-100" id="btn-predict">Predict!</button>
+    </div>
+
+    <!-- Loader and Result -->
+    <div class="loader" style="display:none; margin: 20px auto;"></div>
+    <!-- Result Modal -->
+    <div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title center" id="resultModalLabel">Prediction Result</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-5" id="modalBody">
+                    <h5>
+                        <span id="resultText"></span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 id="result"><span></span></h3>
+</div>
+
+{% endblock %}

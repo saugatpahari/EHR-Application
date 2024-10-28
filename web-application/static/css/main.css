@@ -1,0 +1,119 @@
+/* =========================================================================
+    Custom Cascading Style Sheets
+========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+/* Loader Styling */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Button Styling */
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #286090;
+    color: #fff;
+}
+
+/* Upload Area Styling */
+.upload-area {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 2px dashed #5cb85c;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.upload-placeholder {
+    text-align: center;
+    color: #5cb85c;
+}
+
+.upload-icon {
+    font-size: 3em;
+    display: block;
+}
+
+.upload-area input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#imagePreview {
+    margin-top: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Predict Button Container */
+.predict-button-container {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* Result Styling */
+#result {
+    color: #5a5a5a;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Footer */
+.foot {
+    background-color: #222;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.foot p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 576px) {
+    .image-section img {
+        width: 100%; /* Make image responsive on smaller screens */
+    }
+
+    .foot {
+        padding: 20px 10px;
+    }
+}
